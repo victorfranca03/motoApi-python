@@ -14,3 +14,5 @@ def listar_motos(db: Session = Depends(get_db)):
 def criar_moto(moto: dict, db: Session = Depends(get_db)):
     service = MotoService(db)
     return service.criar_moto(moto)
+
+

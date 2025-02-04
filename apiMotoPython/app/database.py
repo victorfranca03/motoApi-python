@@ -4,7 +4,7 @@ from sqlalchemy.orm import sessionmaker
 
 # Conexão com o banco SQLite
 
-DATABASE_URL = "sqlite:///./motos.db"
+DATABASE_URL = "sqlite:///./motos..db"
 
 engine = create_engine(DATABASE_URL, conect_args={"check_same_thread": False})
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
